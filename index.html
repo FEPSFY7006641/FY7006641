@@ -184,11 +184,15 @@
         <div id= "Analysis_text">
 
         <p>
-            With the definition of SLAMS established, we can discuss how these technologies are deployed across a wide range of systems. One use of this technology is in search and rescue, these types of applications perfectly demonstrate the usefulness of this technology, as in situation which emergency services would struggle to help people UAV’s can be used in place of humans (Muhammad Wicaksono and Shin, S.Y. (2025)). One major hurdle that arises in search and rescue operations is time constraints, as when there's an emergency e.g someone stuck or injured, every second matters. UAVs can be used in these operations to scout ahead, allowing the rescuers to plan more efficiently and optimise search coordination by clearing large areas of land to avoid wasting time (Piatt, L. (2023)). <br>
+            With the definition of SLAMS established, we can discuss how these technologies are deployed across a wide range of systems. One use of this technology is in search and rescue, these types of applications perfectly demonstrate the usefulness of this technology, as in situation which emergency services would struggle to help people UAV’s can be used in place of humans (Muhammad Wicaksono and Shin, S.Y. (2025)). One major hurdle that arises in search and rescue operations is time constraints, as when there's an emergency e.g someone stuck or injured, every second matters. UAVs can be used in these operations to scout ahea d, allowing the rescuers to plan more efficiently and optimise search coordination by clearing large areas of land to avoid wasting time (Piatt, L. (2023)). <br>
             <form>
                 <Label>How many countries allow robotaxis?<Label>
                 <input type = "number" id = questionrobotaxis placeholder="Only numbers">
+            	<Label id = "Results"></Label>
             </form>
+            
+            
+           <br>
             <br>
 Slam can be used for emergencies, but those same systems can be used to take you around your city. This technology has already been used in places in North America (about 17 cities); just recently, robotaxis have been granted licences to operate in the UK in the city of London. With the use of advanced AI and sensors, the data from all the sensors, such as proximity sensors and cameras, can be stitched together to make one clear image, which can be processed by the AI to make live decisions. The AI is made from nodes; once you have enough, it forms a neural network. Now you might be wondering, how do robotaxis link to GPS-denied environments? They are usually used in urban environments where vehicles would have access to GPS, maps and even other autonomous vehicles in the surroundings. However, there are times when the GPS data becomes unreliable or drops; these places are usually tunnels or high-rise buildings, such as multi-story parking. In these situations, GPS cannot be used, so the vehicle must switch to slam's to save the day. When SLAM takes over, the previously mentioned sensors are used to detect environmental changes, such as parked cars, walls, and other cars passing or parking, and other relevant information. While the vehicle moves through these GPS-denied areas, the system extracts landmarks, creating its own digital map and workout its own position within it, avoiding obstacles.<br>
 <br>
@@ -213,13 +217,24 @@ NASA Jet Propulsion Laboratory (JPL). (2020). Ingenuity. [online] Available at: 
 Piatt, L. (2023). Overcoming search and rescue challenges. [online] Rigging Lab Academy. Available at: https://rigginglabacademy.com/overcoming-search-rescue-challenges/ [Accessed 31 Oct. 2026].<br> <br>
         </div>
         <script>
-        	var button1 = document.getElementById("B1")
-            function changeColor() {
-            	var  randomColor =  "#" + Math.floor(Math.random()*16777215).toString(16);
-                button1.style.backgroundColor = randomColor
+        function question() {
+        	const answer = 17
+            const useranswer = Number(document.getElementById("questionrobotaxis").value);
+            if (useranswer>answer){
+            document.getElementById("Results").innerText = "Too high"
             }
-            button1.addEventListener("click", changeColor);
+           else if (useranswer<answer){
+           document.getElementById("Results").innerText = "Too low"
+           
+           }
+           else{
+           document.getElementById("Results").innerText = "Correct"
+           }
+        
+        }
+
         </script>
+       
 			
   </body>
 		
