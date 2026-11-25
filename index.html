@@ -117,7 +117,17 @@
     <style>
         .mySlides{display:none;}
     </style>
-    <body style ="background-color:#FFFFFF;margin-left:50px">
+    <body style ="background-color:#FFFFFF;margin-left:50px"> 
+    <style>
+    .text-image{
+        float: right;
+        width: 460px;
+        height:auto;
+        margin-left: 15px;
+        margin-bottom:10px;
+
+    }
+    </style>
 
   </head>
 
@@ -156,11 +166,6 @@
 				</pre>
            
             </p>
-            <form>
-            <label>question</label>
-            <input></input>
-            <button id="B1"type = "button">CLICK HERE</button>
-            </form>
 		
         <h3 id="Abstract">Abstract</h3>
 
@@ -180,11 +185,16 @@
 
         <p>
             With the definition of SLAMS established, we can discuss how these technologies are deployed across a wide range of systems. One use of this technology is in search and rescue, these types of applications perfectly demonstrate the usefulness of this technology, as in situation which emergency services would struggle to help people UAV’s can be used in place of humans (Muhammad Wicaksono and Shin, S.Y. (2025)). One major hurdle that arises in search and rescue operations is time constraints, as when there's an emergency e.g someone stuck or injured, every second matters. UAVs can be used in these operations to scout ahead, allowing the rescuers to plan more efficiently and optimise search coordination by clearing large areas of land to avoid wasting time (Piatt, L. (2023)). <br>
+            <form>
+                <Label>How many countries allow robotaxis?<Label>
+                <input type = "number" id = questionrobotaxis placeholder="Only numbers">
+            </form>
             <br>
 Slam can be used for emergencies, but those same systems can be used to take you around your city. This technology has already been used in places in North America (about 17 cities); just recently, robotaxis have been granted licences to operate in the UK in the city of London. With the use of advanced AI and sensors, the data from all the sensors, such as proximity sensors and cameras, can be stitched together to make one clear image, which can be processed by the AI to make live decisions. The AI is made from nodes; once you have enough, it forms a neural network. Now you might be wondering, how do robotaxis link to GPS-denied environments? They are usually used in urban environments where vehicles would have access to GPS, maps and even other autonomous vehicles in the surroundings. However, there are times when the GPS data becomes unreliable or drops; these places are usually tunnels or high-rise buildings, such as multi-story parking. In these situations, GPS cannot be used, so the vehicle must switch to slam's to save the day. When SLAM takes over, the previously mentioned sensors are used to detect environmental changes, such as parked cars, walls, and other cars passing or parking, and other relevant information. While the vehicle moves through these GPS-denied areas, the system extracts landmarks, creating its own digital map and workout its own position within it, avoiding obstacles.<br>
 <br>
 SLAM can be used in different industries. Another application is mining. In mining, you would often find a lack of GPS or other forms of navigation (Envisioning (n.d.)). To do this, you would have to make use of a lidar sensor rather than using standard cameras. In mining, SLAM is used for "autonomous haulage trucks, robotic inspection drones", focusing on drones similarly to search and rescue; they aid workers by giving them an extra set of eyes in areas where there are "hazardous working conditions unsuitable for humans", allowing workers to collect data while also saving time and expenses, and improving safety (McMinn, 2024). An example of this is the action in Germany; the goal was to take "stockpile measurements " to improve safety and accuracy at a salt mine. The work required taking surveys of the salt stockpiles every month. For manual data collection, workers must climb the salt piles and measure from the top to the bottom. After " they draw the cones in CAD software, then use these drawings to calculate their volumes." (Flyability, n.d.). This is labour-intensive the calculations are not as accurate. However, using the drone, they were able to collect data from each stockpile much more quickly using the lidar sensors; using the data, they created high-quality 3D maps of the salt stockpiles, which were more accurate than those collected manually (Flyability, n.d.). Safety is dramatically improved, as no workers have to climb the stockpiles and the drone required little to no oversight (Flyability, n.d.). <br>
 <br>
+<img src = "anatomy-of-ingenuity-mars-helicopter.webp" class = "text-image" alt = "Diagram of ingenuity rover">
 The use cases for UAVs span much further than search and rescue, robotaxis and other ways we automate our lives. In fact, it stretches far beyond Earth into the cosmos. One example of this is the Ingenuity  Mars rover, " the little helicopter that could" (Cameron, A. (2021)); this simple drone was developed by NASA's Jet Propulsion Laboratory. On paper, the SOC that was controlling most of the heavy tasks was a Snapdragon 810 (Cameron, A. (2021)), while this information by itself is meaningless without context; this SOC was used in smartphones in 2014, 6 years before the launch. The lack of newer specialised hardware was intentional, as the drone was just meant to demonstrate that "aerial scouting and other functions could benefit future exploration of Mars and other worlds"(Cameron, A. (2021)); the drone far exceeded the original goal. Even the sensors used were essentially off the shelf parts, made by brands like Bosch and Garmin (Cameron, A. (2021)). The drone being unmanned was necessary, as data must be sent “over millions of miles”, which could lead to significant delays between inputs (NASA Jet Propulsion Laboratory (JPL). (2020)) (Cameron, A. (2021)). The autonomous system wasn't just used to control the drone they were also used to control the heating systems to ensure that the systems don't freeze in the harsh conditions of Mars. 
 
         </p>
